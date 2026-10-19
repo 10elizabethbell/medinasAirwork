@@ -1,0 +1,467 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-19T19:48:24.650579+00:00",
+  "title": "Design System: Medina's Airwork",
+  "extensions": {
+    "colorMeta": {
+      "navy": {
+        "role": "neutral",
+        "displayName": "Flyer Navy",
+        "canonical": "oklch(24.9% 0.076 262)",
+        "tonalRamp": [
+          "#000729",
+          "#102349",
+          "#2b416a",
+          "#4a618d",
+          "#6a82b0",
+          "#8ba6d5",
+          "#afcafb",
+          "#d3efff"
+        ]
+      },
+      "navy-2": {
+        "role": "neutral",
+        "displayName": "Deep Navy Lift",
+        "canonical": "oklch(32.5% 0.108 262)",
+        "tonalRamp": [
+          "#000430",
+          "#062055",
+          "#213f7a",
+          "#3f609e",
+          "#5f81c3",
+          "#80a5e9",
+          "#a3c9ff",
+          "#caefff"
+        ]
+      },
+      "blue": {
+        "role": "secondary",
+        "displayName": "Electric Blue",
+        "canonical": "oklch(56.1% 0.241 263)",
+        "tonalRamp": [
+          "#05004e",
+          "#00007f",
+          "#0028b2",
+          "#034be7",
+          "#2b73ff",
+          "#4e99ff",
+          "#7cc3ff",
+          "#abecff"
+        ]
+      },
+      "blue-bright": {
+        "role": "secondary",
+        "displayName": "Bright Wordmark Blue",
+        "canonical": "oklch(65.7% 0.183 260)",
+        "tonalRamp": [
+          "#000041",
+          "#00166c",
+          "#00379b",
+          "#1659c6",
+          "#3b7dee",
+          "#5ea2ff",
+          "#87c8ff",
+          "#b4efff"
+        ]
+      },
+      "ice": {
+        "role": "tertiary",
+        "displayName": "Ice Blue",
+        "canonical": "oklch(87.1% 0.072 239)",
+        "tonalRamp": [
+          "#000c24",
+          "#002844",
+          "#154764",
+          "#376786",
+          "#5889a9",
+          "#7aaccd",
+          "#9ed0f3",
+          "#c2f6ff"
+        ]
+      },
+      "flame": {
+        "role": "primary",
+        "displayName": "Flame Orange",
+        "canonical": "oklch(70.3% 0.198 43)",
+        "tonalRamp": [
+          "#310000",
+          "#5b0000",
+          "#880000",
+          "#b41e00",
+          "#dd4b00",
+          "#ff7124",
+          "#ff9d60",
+          "#ffca95"
+        ]
+      },
+      "flame-hi": {
+        "role": "primary",
+        "displayName": "Flame Light",
+        "canonical": "oklch(75.0% 0.167 51)",
+        "tonalRamp": [
+          "#2c0000",
+          "#540000",
+          "#7e1300",
+          "#a63800",
+          "#cd5d00",
+          "#f58132",
+          "#ffa863",
+          "#ffd397"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Cool Paper",
+        "canonical": "oklch(96.2% 0.011 257)",
+        "tonalRamp": [
+          "#080b10",
+          "#22252a",
+          "#3e4248",
+          "#5d6267",
+          "#7e8389",
+          "#a1a5ac",
+          "#c5cad0",
+          "#eaeff6"
+        ]
+      },
+      "paper-2": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "oklch(100.0% 0.000 90)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "oklch(43.4% 0.073 264)",
+        "tonalRamp": [
+          "#010728",
+          "#122348",
+          "#2e4169",
+          "#4c618b",
+          "#6c82af",
+          "#8ea5d3",
+          "#b1c9f9",
+          "#d6efff"
+        ]
+      },
+      "on-dark-soft": {
+        "role": "neutral",
+        "displayName": "Mist",
+        "canonical": "oklch(86.1% 0.042 263)",
+        "tonalRamp": [
+          "#030a1d",
+          "#1a253a",
+          "#364259",
+          "#55617a",
+          "#75839c",
+          "#97a6c0",
+          "#bbcae6",
+          "#e0efff"
+        ]
+      },
+      "line-light": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(89.7% 0.026 259)",
+        "tonalRamp": [
+          "#050b16",
+          "#1d2532",
+          "#3a4350",
+          "#586270",
+          "#798392",
+          "#9ba6b6",
+          "#bfcadb",
+          "#e4efff"
+        ]
+      },
+      "error-ink": {
+        "role": "error",
+        "displayName": "Error Ink",
+        "canonical": "oklch(50.3% 0.180 30)",
+        "tonalRamp": [
+          "#2f0000",
+          "#590000",
+          "#860000",
+          "#b12216",
+          "#d94c3c",
+          "#ff715e",
+          "#ff9b87",
+          "#ffc8b4"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink (alias of Flyer Navy)",
+        "canonical": "oklch(24.9% 0.076 262)",
+        "tonalRamp": [
+          "#000729",
+          "#102349",
+          "#2b416a",
+          "#4a618d",
+          "#6a82b0",
+          "#8ba6d5",
+          "#afcafb",
+          "#d3efff"
+        ]
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "On Dark (white)",
+        "canonical": "oklch(100.0% 0.000 90)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only; 900 italic uppercase, single words coloured flame or ice."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "One per section; 900 italic uppercase, balanced wrap."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service rows, step headings, place list."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running copy; 18px at 1024px and up."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Section intro in soft ink, max 38ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Drag hint, validation errors, helper notes."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Pill buttons and the header phone number."
+      }
+    },
+    "shadows": [
+      {
+        "name": "cta-lift",
+        "value": "0 8px 18px -8px rgba(4,12,32,.55)",
+        "purpose": "Under flame buttons only."
+      },
+      {
+        "name": "photo-float",
+        "value": "0 22px 40px -18px rgba(0,0,0,.6)",
+        "purpose": "Install photos on the navy proof band."
+      },
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 3px rgba(29,99,255,.18)",
+        "purpose": "Hover/focus ring on inputs, chips, copy button."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-color",
+        "value": "0.2s ease",
+        "purpose": "Colour/border transitions on buttons, arrows, icons."
+      },
+      {
+        "name": "state-control",
+        "value": "0.15s ease",
+        "purpose": "Input and chip border/halo transitions; button press transform."
+      },
+      {
+        "name": "press",
+        "value": "transform: scale(.98)",
+        "purpose": "Button :active."
+      },
+      {
+        "name": "hint-fade",
+        "value": "opacity 0.6s",
+        "purpose": "Drag hint fades after first touch."
+      },
+      {
+        "name": "hero-air",
+        "value": "COUNT_PHONE 700, COUNT_DESK 1150, SPEED 1.35, DRIFT 0.55, TRAIL 0.068, CELL 18, HEAT_RADIUS 80, HEAT_ADD 0.26, COOL 0.005, PUSH_RADIUS 95, PUSH 0.9, GHOST_IDLE 3500ms; heat ramp ice #8fceff > #cde8ff > #fff4e4 > #ffaa5a > #ff6b1a",
+        "purpose": "Touchable hero particle field; paused offscreen; still frame under reduced motion; DPR capped at 1.5."
+      },
+      {
+        "name": "seam-wave",
+        "value": "SPEED 1.0, AMP 9; line bases 39/46/51 in a 1440x90 viewBox; strokes 1.6/2.6/1.6",
+        "purpose": "Animated section dividers, visible-only, static under reduced motion."
+      },
+      {
+        "name": "proof-drift",
+        "value": "COUNT 160 (60% on phones), SPEED 0.6, trail fade .035, 22% warm #ff8a3d @.7, rest ice @.55",
+        "purpose": "Ambient air behind install photos."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "700px"
+      },
+      {
+        "name": "desktop",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Fire Button",
+      "kind": "button",
+      "refersTo": "button-fire",
+      "description": "The single primary action: free estimate, text Miguel. Flame fill, navy text.",
+      "html": "<a class=\"ds-btn-fire\" href=\"#\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2z\"/></svg>Get a free estimate</a>",
+      "css": ":root{--navy:#0c1f45;--navy-2:#13306a;--blue:#1d63ff;--blue-bright:#4a8dff;--ice:#a9dcff;--flame:#ff6b1a;--flame-hi:#ff8a3d;--paper:#eef3fa;--paper-2:#fff;--ink:#0c1f45;--ink-soft:#3c5079;--on-dark-soft:#c3d2ee;--line-light:#d3deef;--font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-btn-fire{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:56px;padding:0 1.4rem;border-radius:999px;font-family:var(--font,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif);font-weight:800;font-size:1.05rem;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background-color .2s,border-color .2s,color .2s,transform .15s;background:var(--flame);color:var(--navy);border-color:var(--flame);box-shadow:0 8px 18px -8px rgba(4,12,32,.55)}.ds-btn-fire:hover{background:var(--flame-hi);border-color:var(--flame-hi)}.ds-btn-fire:focus-visible{outline:3px solid var(--blue);outline-offset:3px}.ds-btn-fire:active{transform:scale(.98)}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Secondary action on the navy ground: transparent with a white outline.",
+      "html": "<div class=\"ds-dark\"><a class=\"ds-btn-line\" href=\"#\">Contractor? Work with me</a></div>",
+      "css": ":root{--navy:#0c1f45;--navy-2:#13306a;--blue:#1d63ff;--blue-bright:#4a8dff;--ice:#a9dcff;--flame:#ff6b1a;--flame-hi:#ff8a3d;--paper:#eef3fa;--paper-2:#fff;--ink:#0c1f45;--ink-soft:#3c5079;--on-dark-soft:#c3d2ee;--line-light:#d3deef;--font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-dark{background:var(--navy);padding:24px}.ds-btn-line{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:56px;padding:0 1.4rem;border-radius:999px;font-family:var(--font,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif);font-weight:800;font-size:1.05rem;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background-color .2s,border-color .2s,color .2s,transform .15s;background:transparent;color:#fff;border-color:rgba(255,255,255,.75)}.ds-btn-line:hover{border-color:#fff;background:rgba(255,255,255,.08)}.ds-btn-line:focus-visible{outline:3px solid var(--ice);outline-offset:3px}.ds-btn-line:active{transform:scale(.98)}"
+    },
+    {
+      "name": "White Button",
+      "kind": "button",
+      "refersTo": "button-white",
+      "description": "External link on dark grounds (Facebook). White fill, ice on hover.",
+      "html": "<div class=\"ds-dark\"><a class=\"ds-btn-white\" href=\"#\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"#1877f2\" d=\"M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z\"/></svg>Click to see more of my work</a></div>",
+      "css": ":root{--navy:#0c1f45;--navy-2:#13306a;--blue:#1d63ff;--blue-bright:#4a8dff;--ice:#a9dcff;--flame:#ff6b1a;--flame-hi:#ff8a3d;--paper:#eef3fa;--paper-2:#fff;--ink:#0c1f45;--ink-soft:#3c5079;--on-dark-soft:#c3d2ee;--line-light:#d3deef;--font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-dark{background:var(--navy);padding:24px}.ds-btn-white{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:56px;padding:0 1.4rem;border-radius:999px;font-family:var(--font,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif);font-weight:800;font-size:1.05rem;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background-color .2s,border-color .2s,color .2s,transform .15s;background:#fff;color:var(--navy);border-color:#fff}.ds-btn-white:hover{background:var(--ice);border-color:var(--ice)}.ds-btn-white:focus-visible{outline:3px solid var(--ice);outline-offset:3px}"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "Estimate form field: 2px hairline, 12px radius, blue border plus halo on hover/focus.",
+      "html": "<label class=\"ds-field\"><span>Your name</span><input class=\"ds-input\" type=\"text\"></label>",
+      "css": ":root{--navy:#0c1f45;--navy-2:#13306a;--blue:#1d63ff;--blue-bright:#4a8dff;--ice:#a9dcff;--flame:#ff6b1a;--flame-hi:#ff8a3d;--paper:#eef3fa;--paper-2:#fff;--ink:#0c1f45;--ink-soft:#3c5079;--on-dark-soft:#c3d2ee;--line-light:#d3deef;--font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-field{display:block;font-family:var(--font,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif);color:var(--ink)}.ds-field span{display:block;font-weight:800;margin-bottom:8px}.ds-input{width:100%;min-height:54px;padding:13px 15px;border:2px solid var(--line-light);border-radius:12px;background:#fff;color:var(--ink);font:inherit;font-size:17px;transition:border-color .15s,box-shadow .15s}.ds-input:hover,.ds-input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(29,99,255,.18)}"
+    },
+    {
+      "name": "Choice Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Checkbox/radio chip in the estimate form. Navy fill when selected.",
+      "html": "<div class=\"ds-chips\"><label class=\"ds-chip\"><input type=\"checkbox\" checked><span>Furnace</span></label><label class=\"ds-chip\"><input type=\"checkbox\"><span>Heat pump</span></label><label class=\"ds-chip\"><input type=\"checkbox\"><span>Mini split</span></label></div>",
+      "css": ":root{--navy:#0c1f45;--navy-2:#13306a;--blue:#1d63ff;--blue-bright:#4a8dff;--ice:#a9dcff;--flame:#ff6b1a;--flame-hi:#ff8a3d;--paper:#eef3fa;--paper-2:#fff;--ink:#0c1f45;--ink-soft:#3c5079;--on-dark-soft:#c3d2ee;--line-light:#d3deef;--font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-chips{display:flex;flex-wrap:wrap;gap:10px;font-family:var(--font,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif);color:var(--ink)}.ds-chip{position:relative}.ds-chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}.ds-chip span{display:flex;align-items:center;min-height:46px;padding:0 16px;border:2px solid var(--line-light);border-radius:12px;background:#fff;font-weight:700;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s,box-shadow .15s}.ds-chip:hover span,.ds-chip input:focus-visible+span{border-color:var(--blue);box-shadow:0 0 0 3px rgba(29,99,255,.18)}.ds-chip input:checked+span{background:var(--navy);border-color:var(--navy);color:#fff}.ds-chip:hover input:checked+span,.ds-chip input:checked:focus-visible+span{border-color:var(--blue)}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "header",
+      "description": "Wordmark left (roof glyph, two-tone italic caps), tap-to-call number right, over the navy hero.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><svg width=\"58\" height=\"16\" viewBox=\"0 0 58 16\" aria-hidden=\"true\"><path fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M2 14.5 29 2.2l27 12.3\"/><rect x=\"40\" y=\"2.5\" width=\"5\" height=\"6\" rx=\"1\" fill=\"currentColor\"/></svg><b>Medina's</b><b>Airwork</b></a><a class=\"ds-phone\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z\"/></svg>215-839-2766</a></header>",
+      "css": ":root{--navy:#0c1f45;--navy-2:#13306a;--blue:#1d63ff;--blue-bright:#4a8dff;--ice:#a9dcff;--flame:#ff6b1a;--flame-hi:#ff8a3d;--paper:#eef3fa;--paper-2:#fff;--ink:#0c1f45;--ink-soft:#3c5079;--on-dark-soft:#c3d2ee;--line-light:#d3deef;--font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px 6px;background:var(--navy);font-family:var(--font,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif);}.ds-brand{display:flex;flex-direction:column;align-items:flex-start;text-decoration:none;color:#fff;line-height:.86}.ds-brand svg{margin:0 0 3px 10px}.ds-brand b{display:block;font-weight:900;font-style:italic;text-transform:uppercase;letter-spacing:-.02em;font-size:1.32rem}.ds-brand b+b{color:var(--blue-bright);font-size:1.48rem}.ds-phone{display:flex;align-items:center;gap:.45rem;min-height:44px;color:#fff;font-weight:800;font-size:1.02rem;text-decoration:none;font-variant-numeric:tabular-nums}.ds-phone svg{color:var(--ice);transition:color .2s}.ds-phone:hover svg{color:var(--flame)}.ds-brand:focus-visible,.ds-phone:focus-visible{outline:3px solid var(--ice);outline-offset:3px;border-radius:6px}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Menu-style service list. Hairline rules, and a circular arrow that fills flame on hover.",
+      "html": "<ul class=\"ds-rows\"><li><a class=\"ds-row\" href=\"#\">Furnaces<span class=\"ds-arrow\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M5 12h13M13 6l6 6-6 6\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\">Heat pumps<span class=\"ds-arrow\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M5 12h13M13 6l6 6-6 6\"/></svg></span></a></li></ul>",
+      "css": ":root{--navy:#0c1f45;--navy-2:#13306a;--blue:#1d63ff;--blue-bright:#4a8dff;--ice:#a9dcff;--flame:#ff6b1a;--flame-hi:#ff8a3d;--paper:#eef3fa;--paper-2:#fff;--ink:#0c1f45;--ink-soft:#3c5079;--on-dark-soft:#c3d2ee;--line-light:#d3deef;--font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-rows{list-style:none;margin:0;padding:0;border-top:1px solid var(--line-light);background:var(--paper);font-family:var(--font,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif);}.ds-rows li{border-bottom:1px solid var(--line-light)}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:8px 2px;text-decoration:none;color:var(--ink);font-weight:800;font-size:1.25rem;outline:none}.ds-arrow{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#dde6f4;color:var(--ink);transition:background-color .2s,color .2s}.ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:var(--flame);color:#fff}.ds-row:focus-visible .ds-arrow{outline:3px solid var(--flame);outline-offset:3px}"
+    },
+    {
+      "name": "Step Marker",
+      "kind": "custom",
+      "refersTo": "step-number",
+      "description": "Numbered process step: navy circle with a 900 italic numeral.",
+      "html": "<div class=\"ds-step\"><span class=\"ds-n\">1</span><div><h3>Reach out</h3><p>Call or text and tell me what your heat or air is doing.</p></div></div>",
+      "css": ":root{--navy:#0c1f45;--navy-2:#13306a;--blue:#1d63ff;--blue-bright:#4a8dff;--ice:#a9dcff;--flame:#ff6b1a;--flame-hi:#ff8a3d;--paper:#eef3fa;--paper-2:#fff;--ink:#0c1f45;--ink-soft:#3c5079;--on-dark-soft:#c3d2ee;--line-light:#d3deef;--font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-step{display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start;font-family:var(--font,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif);color:var(--ink)}.ds-n{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--navy);color:#fff;font-weight:900;font-style:italic;font-size:1.35rem}.ds-step h3{margin:.2rem 0;font-size:1.25rem;font-weight:800}.ds-step p{margin:0;color:var(--ink-soft)}"
+    },
+    {
+      "name": "Air Seam",
+      "kind": "custom",
+      "refersTo": "seam",
+      "description": "Section divider: three wavering air lines, with the next band's colour filling in under the middle line (static snapshot; live version animated in JS).",
+      "html": "<svg class=\"ds-seam\" viewBox=\"0 0 1440 90\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><rect width=\"1440\" height=\"90\" fill=\"#0c1f45\"/><path fill=\"#eef3fa\" d=\"M0 46C240 30 480 60 720 46S1200 30 1440 46L1440 90L0 90Z\"/><path fill=\"none\" stroke=\"#4a8dff\" stroke-opacity=\".7\" stroke-width=\"1.6\" stroke-linecap=\"round\" d=\"M0 39C240 25 480 52 720 39S1200 25 1440 39\"/><path fill=\"none\" stroke=\"#a9dcff\" stroke-opacity=\".7\" stroke-width=\"2.6\" stroke-linecap=\"round\" d=\"M0 46C240 30 480 60 720 46S1200 30 1440 46\"/><path fill=\"none\" stroke=\"#ff6b1a\" stroke-opacity=\".8\" stroke-width=\"1.6\" stroke-linecap=\"round\" d=\"M0 51C240 38 480 64 720 51S1200 38 1440 51\"/></svg>",
+      "css": ".ds-seam{display:block;width:100%;height:64px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Moving Air",
+    "overview": "Miguel's trade is moving warm and cool air, so the site is built from air. A deep navy ground (lifted straight from his flyer) carries fine streaming currents that run warm (flame orange) or cool (ice blue). In the hero you can touch the current and heat it with a finger. Between sections the edge is never a ruled line: it's a live seam of three wavering air lines with the next band's colour filling in under the middle one. Light paper bands sit between the dark ones like rooms the air moves through.\n\nThe voice is loud and local, never corporate. Display type is heavy italic uppercase, like the logo lettering on his van and flyer, set in the system font stack. This is the owner's pinned house style, not a placeholder. Everything else stays quiet and phone-first: big pill buttons at least 56px tall, list rows that read like a menu, and an estimate form that becomes a pre-written text. Density is generous on phones and opens into two-column splits on desktop.\n\nColour carries temperature. Orange means heat and action (the primary CTA, the warm word, warm particles). Ice and blue mean cool air and calm structure. The two never trade places.",
+    "keyCharacteristics": [
+      "Navy-and-paper alternating bands joined by animated air seams, never straight edges.",
+      "Heavy italic uppercase display in the system stack, tight leading (0.98), slight negative tracking.",
+      "Temperature palette: flame = heat and action, ice/blue = cool air and structure.",
+      "Canvas particle fields (hero, proof band) are the imagery. There's no stock photography; the only photos are real install shots.",
+      "Pill buttons, softly rounded controls, circular markers. No sharp corners anywhere."
+    ],
+    "rules": [
+      {
+        "name": "The Temperature Rule",
+        "body": "Orange is heat, blue and ice are cool. Flame marks the one primary action and anything warm. Never use it for neutral decoration, and never set the cool family on a warm meaning.",
+        "section": "colors"
+      },
+      {
+        "name": "The Navy Ink Rule",
+        "body": "Text on flame is navy, never white. The navy-on-orange pairing comes from the flyer, and it holds contrast.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Grounds Rule",
+        "body": "Surfaces are either the navy ground or a paper band (`paper` or `paper-2`). There are no grey or tinted mid-surfaces.",
+        "section": "colors"
+      },
+      {
+        "name": "The Van Lettering Rule",
+        "body": "Only the hero headline, section headlines, the wordmark and the step numerals use 900 italic. Everything else stays upright.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Voice Rule",
+        "body": "Copy is set as Miguel speaking. Strong weight (700 to 800) marks his commitments (\"I'm Miguel.\", \"Licensed & insured.\"), not decoration.",
+        "section": "typography"
+      },
+      {
+        "name": "The Bands-and-Seams Rule",
+        "body": "The page is a vertical run of full-bleed bands alternating navy and paper. Every band boundary is an air seam (64px tall, 90px at 1024px), never a hard edge.",
+        "section": "layout"
+      },
+      {
+        "name": "The Air Is The Depth Rule",
+        "body": "Layering comes from streaming air behind the content, not stacked cards. On light bands, controls stay flat and get only the focus halo.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do join every pair of bands with an air seam, filled with the outgoing band's colour and the incoming band's colour.",
+      "Do set section headlines in 900 italic uppercase at clamp(2rem, 8.4vw, 3.4rem) with 0.98 leading, in the system stack.",
+      "Do keep flame for the single primary action per view and for anything warm. Put navy text on it.",
+      "Do use ice for focus on dark grounds and electric blue for focus on light grounds (3px outline, 3px offset).",
+      "Do keep tap targets at 44px or more and primary buttons at 56px, full width on phones.",
+      "Do let canvases pause offscreen and fall back to a still frame under prefers-reduced-motion.",
+      "Do keep moving air out from behind text, using soft masks rather than hard boxes."
+    ],
+    "donts": [
+      "Don't separate bands with straight edges or ruled lines. Hairlines belong only between list rows.",
+      "Don't use flame for decoration, borders on neutral controls, or cool meanings.",
+      "Don't introduce a webfont or a second family. The system stack at extreme weights is the owner's house style.",
+      "Don't add stock photography or icon-card grids. The imagery is the air and Miguel's real install photos.",
+      "Don't add sharp corners. Every shape is a pill, a 10 to 14px round, or a circle.",
+      "Don't add shadows on light bands beyond the focus halo."
+    ]
+  }
+}

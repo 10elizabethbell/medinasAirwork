@@ -50,3 +50,6 @@
 - The real SMS handoff on iOS and Android (`sms:+12158392766?&body=`), and how the copy fallback behaves in the FB in-app browser.
 - Frame rate on older phones.
 - Headless Chrome doesn't capture canvas in top-level screenshots; all review shots were taken inside an iframe.
+
+## Review status
+Impeccable: detector run (system-font finding suppressed as house style; flat-type-scale finding left standing, sizes separated by weight). All 16 modes swept by an agent (no live/onboard); finish reviewer ran 2 rounds, disposition **fix**. Resolved: duplicate call link, photo shapes, HANDOFF, desktop composition, recapture. Fixed after the last verdict and not re-scored: county names wrapping mid-name, the rectangular clear zones behind text (now feathered ellipses). **Still open, yours to call:** the photos still sit as plain cards on the drifting air (not wrapped by it), and the reviewer felt the dense desktop air can read as "combed fur" rather than air; I thinned it (`COUNT_DESK` 1150, `TRAIL` .068) but it needs your eye.
