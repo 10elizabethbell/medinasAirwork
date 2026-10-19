@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Medina's Airwork | Heating &amp; Cooling, Philadelphia</title>
+<meta name="description" content="Heating and cooling installs, replacements, repairs and maintenance in Philadelphia, Delaware, Bucks and Montgomery County. Furnaces, heat pumps, mini splits and central air. Free estimates from Miguel.">
+<meta name="theme-color" content="#0c1f45">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Medina's Airwork | Heating &amp; Cooling, Philadelphia">
+<meta property="og:description" content="Furnaces, heat pumps, mini splits and central air. Free estimates from Miguel.">
+<meta property="og:url" content="https://10elizabethbell.github.io/medinasAirwork/">
+<meta property="og:image" content="https://10elizabethbell.github.io/medinasAirwork/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+/* ============ Tokens ============ */
+:root{
+  --navy:#0c1f45;
+  --navy-2:#13306a;
+  --navy-3:#1a3d82;
+  --blue:#1d63ff;
+  --blue-bright:#4a8dff;
+  --blue-ink:#1550d8;
+  --ice:#a9dcff;
+  --flame:#ff6b1a;
+  --flame-hi:#ff8a3d;
+  --paper:#eef3fa;
+  --paper-2:#ffffff;
+  --ink:#0c1f45;
+  --ink-soft:#3c5079;
+  --on-dark:#ffffff;
+  --on-dark-soft:#c3d2ee;
+  --line-light:#d3deef;
+  --radius:14px;
+  --gutter:20px;
+  --max:1180px;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;overscroll-behavior-y:none;scroll-behavior:smooth}
+body{margin:0;background:var(--navy);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.55}
+img{display:block;max-width:100%}
+a{color:inherit}
+::selection{background:var(--flame);color:#fff}
+:focus-visible{outline:3px solid var(--ice);outline-offset:3px;border-radius:6px}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.display{font-weight:900;font-style:italic;text-transform:uppercase;letter-spacing:-.02em;line-height:.98;margin:0}
+h2.display{font-size:clamp(2rem,8.4vw,3.4rem);text-wrap:balance}
+.lede{font-size:1.06rem;color:var(--ink-soft);margin:.9rem 0 0;max-width:38ch}
+
+/* ============ Buttons ============ */
+.btn{display:flex;align-items:center;justify-content:center;gap:.6rem;min-height:56px;padding:0 1.4rem;border-radius:999px;font:inherit;font-weight:800;font-size:1.05rem;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background-color .2s,border-color .2s,color .2s,transform .15s}
+.btn:active{transform:scale(.98)}
+.btn-fire{background:var(--flame);color:var(--navy);border-color:var(--flame);box-shadow:0 8px 18px -8px rgba(4,12,32,.55)}
+.btn-fire:hover{background:var(--flame-hi);border-color:var(--flame-hi)}
+.btn-line{background:transparent;color:#fff;border-color:rgba(255,255,255,.75)}
+.btn-line:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn svg{width:22px;height:22px;flex:none}
+
+/* ============ Header ============ */
+.top{position:relative;z-index:3}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:14px;padding-bottom:6px}
+.brand{display:flex;flex-direction:column;align-items:flex-start;text-decoration:none;color:#fff;line-height:.86}
+.brand .roof{width:58px;height:16px;margin:0 0 3px 10px;color:#fff}
+.brand b{display:block;font-weight:900;font-style:italic;text-transform:uppercase;letter-spacing:-.02em;font-size:1.32rem}
+.brand b + b{color:var(--blue-bright);font-size:1.48rem}
+.phone{display:flex;align-items:center;gap:.45rem;min-height:44px;padding:0 2px;color:#fff;font-weight:800;font-size:1.02rem;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
+.phone svg{width:20px;height:20px;color:var(--ice);transition:color .2s}
+.phone:hover svg{color:var(--flame)}
+
+/* ============ Hero ============ */
+.hero{position:relative;overflow:hidden;color:#fff;background:
+  radial-gradient(120% 80% at 85% 110%,rgba(29,99,255,.28),transparent 60%),
+  radial-gradient(90% 60% at 0% 0%,rgba(74,141,255,.16),transparent 60%),
+  var(--navy)}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero-inner{position:relative;z-index:2;padding-top:22px}
+.hero-copy{max-width:600px}
+.hero h1{font-size:clamp(2.7rem,12.2vw,5.6rem)}
+.hero h1 .warm{color:var(--flame)}
+.hero h1 .cool{color:var(--ice)}
+.promise{font-size:clamp(1.06rem,4.5vw,1.25rem);color:var(--on-dark-soft);margin:1.1rem 0 0;max-width:34ch}
+.promise strong{color:#fff;font-weight:700}
+.cta{display:grid;gap:12px;margin-top:1.6rem}
+.air-pad{position:relative;height:clamp(230px,34svh,320px);touch-action:none;-webkit-user-select:none;user-select:none}
+.hint{position:absolute;left:0;right:0;bottom:64px;text-align:center;font-size:.9rem;font-weight:700;letter-spacing:.02em;color:var(--on-dark-soft);pointer-events:none;transition:opacity .6s}
+.hint svg{width:18px;height:18px;vertical-align:-4px;margin-right:6px;color:var(--flame)}
+.hero.touched .hint{opacity:0}
+
+/* ============ Air seams (section dividers) ============ */
+.seam{display:block;width:100%;height:64px;margin-top:-1px;position:relative;z-index:1}
+.seam path.fill{stroke:none}
+.hero > .seam{position:absolute;left:0;right:0;bottom:-1px;margin:0;z-index:1;pointer-events:none}
+.seam path.line{fill:none;stroke-linecap:round}
+
+/* ============ Sections ============ */
+.band{padding:56px 0 64px}
+.light{background:var(--paper)}
+.white{background:var(--paper-2)}
+.dark{background:var(--navy);color:#fff}
+.dark .lede{color:var(--on-dark-soft)}
+
+/* Services */
+.rows{list-style:none;margin:1.6rem 0 0;padding:0;border-top:1px solid var(--line-light)}
+.rows li{border-bottom:1px solid var(--line-light)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:8px 2px;text-decoration:none;color:var(--ink);font-weight:800;font-size:1.18rem;outline:none}
+.row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
+.arrow{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#dde6f4;color:var(--ink);transition:background-color .2s,color .2s}
+.arrow svg{width:18px;height:18px}
+.row:hover .arrow,.row:focus-visible .arrow{background:var(--flame);color:#fff}
+.row:focus-visible .arrow{outline:3px solid var(--flame);outline-offset:3px}
+
+/* Steps */
+.steps{list-style:none;margin:1.8rem 0 0;padding:0;display:grid;gap:26px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start}
+.steps .n{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--navy);color:#fff;font-weight:900;font-style:italic;font-size:1.35rem}
+.steps h3{margin:.2rem 0 .2rem;font-size:1.2rem;font-weight:800}
+.steps p{margin:0;color:var(--ink-soft)}
+.assure{margin:2rem 0 0;font-weight:800;font-size:1.08rem;color:var(--ink)}
+.assure span{color:var(--blue-ink)}
+
+/* Proof */
+.proof{position:relative;overflow:hidden}
+.proof canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.proof .wrap{position:relative;z-index:1}
+.shots{display:grid;grid-template-columns:.62fr 1fr;gap:14px;margin-top:1.6rem;align-items:end}
+.shot{margin:0;border-radius:var(--radius);overflow:hidden;background:var(--navy-2);box-shadow:0 22px 40px -18px rgba(0,0,0,.6)}
+.shot img{width:100%;height:100%;object-fit:cover}
+.shot.tall{aspect-ratio:254/440}
+.shot.wide{aspect-ratio:516/440}
+.fb{margin-top:1.4rem;background:#fff;color:var(--navy);border-color:#fff}
+.fb:hover{background:var(--ice);border-color:var(--ice)}
+.fb svg{color:#1877f2}
+
+/* Area */
+.places{margin:1.4rem 0 0;font-size:clamp(1.35rem,6vw,2rem);font-weight:900;font-style:italic;text-transform:uppercase;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
+.places span{color:var(--blue-ink)}
+.reach{display:grid;gap:14px;margin:1.6rem 0 0;padding:0;list-style:none}
+.reach li{display:grid;grid-template-columns:28px 1fr;gap:12px;color:var(--ink-soft)}
+.reach svg{width:26px;height:26px;color:var(--blue);margin-top:1px}
+.reach strong{color:var(--ink)}
+
+/* Contractors */
+.crew .btn{margin-top:1.6rem}
+
+/* Estimate form */
+form{margin-top:1.6rem;display:grid;gap:22px}
+.field label,.field legend{display:block;font-weight:800;margin-bottom:8px;padding:0}
+.field .opt{font-weight:500;color:var(--ink-soft)}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+input[type=text],textarea{width:100%;min-height:54px;padding:13px 15px;border:2px solid var(--line-light);border-radius:12px;background:#fff;color:var(--ink);font:inherit;font-size:17px;transition:border-color .15s,box-shadow .15s}
+textarea{min-height:110px;resize:vertical}
+input[type=text]:hover,textarea:hover,input[type=text]:focus,textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(29,99,255,.18)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.chip span{display:flex;align-items:center;min-height:46px;padding:0 16px;border:2px solid var(--line-light);border-radius:12px;background:#fff;font-weight:700;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s,box-shadow .15s}
+.chip:hover span,.chip input:focus-visible + span{border-color:var(--blue);box-shadow:0 0 0 3px rgba(29,99,255,.18)}
+.chip input:checked + span{background:var(--navy);border-color:var(--navy);color:#fff}
+.chip input:checked:focus-visible + span,.chip:hover input:checked + span{border-color:var(--blue)}
+.err{display:none;margin:8px 0 0;color:#b4261a;font-weight:700;font-size:.95rem}
+.invalid .err{display:block}
+.invalid input[type=text]{border-color:#c8392b}
+form .btn-fire:hover,form .btn-fire:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.send-note{margin:-8px 0 0;font-size:.95rem;color:var(--ink-soft)}
+.fallback{display:none;margin-top:4px;padding:18px;border-radius:var(--radius);background:#fff;border:2px solid var(--line-light)}
+.fallback.show{display:block}
+.fallback p{margin:0 0 10px}
+.fallback pre{white-space:pre-wrap;font:inherit;margin:0 0 14px;padding:12px;background:var(--paper);border-radius:10px}
+.copy{min-height:46px;padding:0 18px;border-radius:12px;border:2px solid var(--line-light);background:#fff;color:var(--ink);font:inherit;font-weight:800;cursor:pointer}
+.copy:hover,.copy:focus-visible{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(29,99,255,.18)}
+.or-call{margin:22px 0 0;font-size:1.05rem;color:var(--ink-soft)}
+.or-call a{display:inline-block;padding:12px 0;margin:-12px 0;color:var(--ink);font-weight:800;text-decoration-color:var(--flame);text-underline-offset:4px;text-decoration-thickness:2px;white-space:nowrap}
+
+/* Footer */
+footer{background:var(--navy);color:var(--on-dark-soft);padding:48px 0 calc(40px + env(safe-area-inset-bottom))}
+footer .brand{margin-bottom:10px}
+footer p{margin:.2rem 0}
+footer .tag{color:#fff;font-weight:700;margin-bottom:1.2rem}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+footer ul a{display:inline-flex;align-items:center;min-height:44px;color:#fff;text-decoration:none;font-weight:700;gap:10px}
+footer ul a:hover{color:var(--ice)}
+footer ul svg{width:20px;height:20px;color:var(--ice)}
+footer small{display:block;margin-top:1.6rem;font-size:.85rem}
+
+/* ============ Desktop ============ */
+@media (min-width:700px){
+  :root{--gutter:32px}
+  .cta{grid-template-columns:auto auto;justify-content:start}
+  .fb,.crew .btn{display:inline-flex}
+  .shots{max-width:640px}
+  .shots{gap:20px}
+}
+@media (min-width:1024px){
+  body{font-size:18px}
+  .top .wrap{padding-top:22px}
+  .brand b{font-size:1.5rem}
+  .brand b + b{font-size:1.7rem}
+  .phone{font-size:1.15rem}
+  .hero{min-height:min(92svh,860px);display:flex;flex-direction:column}
+  .hero-inner{flex:1;display:flex;flex-direction:column;justify-content:center;padding-top:40px;padding-bottom:120px}
+  .air-pad{position:absolute;inset:0;height:auto;z-index:1}
+  .hint{bottom:96px}
+  .band{padding:96px 0 104px}
+  .split{display:grid;grid-template-columns:1fr 1.1fr;gap:72px;align-items:start}
+  .rows{margin-top:0}
+  .steps{grid-template-columns:repeat(3,1fr);gap:36px}
+  .steps li{grid-template-columns:1fr;gap:14px}
+  .shots{grid-template-columns:.55fr 1fr;max-width:720px}
+  form{grid-template-columns:1fr 1fr;column-gap:28px}
+  form .wide-f{grid-column:1/-1}
+  .seam{height:90px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .btn,.arrow,.chip span{transition:none}
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: Miguel's trade is moving warm and cool air, so the page is made of air: currents you can touch and heat with a finger, not a stock HVAC template with a van photo and icon cards.
+OWN-WORLD: Deep navy ground from his flyer, electric blue wordmark, flame-orange heat, ice-blue cool air. Heavy italic uppercase lettering like his logo. Fine streaming air lines; seams between sections are moving air currents; light paper bands between.
+STORY: Homeowner sees a real local heating and cooling pro, believes he'll treat the house right, taps for a free estimate (a pre-written text) or calls the top-right number. Contractors find their own path to install support.
+FIRST VIEWPORT (phone): wordmark left, phone number top-right; WARM WINTERS. COOL SUMMERS. huge; one promise line as Miguel; Free estimate (orange) + Contractors (outline); air field below, drag to warm it.
+FORM: airflow currents, grounded list #1 (roll assigned #7, duct blueprint; Ellie's pick rule wins, blueprint noted as runner-up), seed 67a4ee81.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M5 12h13M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path fill="currentColor" d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 5h18v14H3zM3 6l9 7 9-7"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path fill="currentColor" d="M2 5h12v10H2zM14 9h4l3 3.5V15h-7zM6 19.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm11 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 11V5a1.5 1.5 0 0 1 3 0v5m0-1V4a1.5 1.5 0 0 1 3 0v6m0-3.5a1.5 1.5 0 0 1 3 0V14a7 7 0 0 1-7 7h-.6a6 6 0 0 1-4.6-2.2L3.6 16a1.6 1.6 0 0 1 2.4-2l3 2.6V8a1.5 1.5 0 0 1 3 0"/></symbol>
+  <symbol id="i-roof" viewBox="0 0 58 16"><path fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" d="M2 14.5 29 2.2l27 12.3"/><rect x="40" y="2.5" width="5" height="6" rx="1" fill="currentColor"/></symbol>
+</svg>
+
+
+
+<main id="top">
+<section class="hero" id="hero" aria-labelledby="hero-title">
+  <canvas id="air" aria-hidden="true"></canvas>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="Medina's Airwork, back to top">
+        <svg class="roof" aria-hidden="true"><use href="#i-roof"/></svg>
+        <b>Medina's</b><b>Airwork</b>
+      </a>
+      <a class="phone" href="tel:+12158392766"><svg aria-hidden="true"><use href="#i-phone"/></svg>215-839-2766</a>
+    </div>
+  </header>
+  <div class="hero-inner wrap">
+    <div class="hero-copy" id="hero-copy">
+      <h1 class="display" id="hero-title"><span class="warm">Warm</span> winters.<br><span class="cool">Cool</span> summers.</h1>
+      <p class="promise"><strong>I'm Miguel.</strong> I'll tell you straight what your heat or AC needs, and treat your home like my own.</p>
+      <div class="cta">
+        <a class="btn btn-fire" href="#estimate">Get a free estimate</a>
+        <a class="btn btn-line" href="#contractors">Contractor? Work with me</a>
+      </div>
+    </div>
+  </div>
+  <div class="air-pad" id="air-pad" aria-hidden="true">
+    <p class="hint"><svg><use href="#i-hand"/></svg>Drag to turn up the heat</p>
+  </div>
+  <svg class="seam" data-seam data-from="none" data-to="#eef3fa" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"></svg>
+</section>
+
+<section class="band light" id="services" aria-labelledby="services-title">
+  <div class="wrap split">
+    <div>
+      <h2 class="display" id="services-title">What I work on</h2>
+      <p class="lede">Installs, replacements, repairs and maintenance.</p>
+    </div>
+    <ul class="rows">
+      <li><a class="row" href="#estimate" data-pick="Furnace">Furnaces<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a class="row" href="#estimate" data-pick="Heat pump">Heat pumps<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a class="row" href="#estimate" data-pick="Mini split">Mini splits<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a class="row" href="#estimate" data-pick="Central air">Central air<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a class="row" href="#estimate" data-pick="Air handler">Air handlers<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a class="row" href="#estimate" data-pick="Water heater">Water heaters<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<svg class="seam" data-seam data-from="#eef3fa" data-to="#ffffff" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"></svg>
+
+<section class="band white" id="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <h2 class="display" id="how-title">How it works</h2>
+    <ol class="steps">
+      <li><span class="n" aria-hidden="true">1</span><div><h3>Reach out</h3><p>Call or text and tell me what your heat or air is doing.</p></div></li>
+      <li><span class="n" aria-hidden="true">2</span><div><h3>Free estimate</h3><p>I look at your system and tell you plainly what it needs, before any work starts.</p></div></li>
+      <li><span class="n" aria-hidden="true">3</span><div><h3>Done right</h3><p>I do the job carefully and clean up after, the way I'd want it done in my own house.</p></div></li>
+    </ol>
+    <p class="assure">Licensed &amp; insured. <span>Estimates are always free.</span></p>
+  </div>
+</section>
+
+<svg class="seam" data-seam data-from="#ffffff" data-to="#0c1f45" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"></svg>
+
+<section class="band dark proof" id="work" aria-labelledby="work-title">
+  <canvas id="drift" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <h2 class="display" id="work-title">Recent installs</h2>
+    <div class="shots">
+      <figure class="shot tall"><img src="img/handler.webp" width="254" height="572" alt="Carrier air handler installed in a utility closet" loading="lazy" decoding="async" draggable="false"></figure>
+      <figure class="shot wide"><img src="img/condenser.webp" width="516" height="334" alt="Carrier outdoor AC condenser installed beside a house" loading="lazy" decoding="async" draggable="false"></figure>
+    </div>
+    <a class="btn fb" href="https://www.facebook.com/profile.php?id=61585588406194"><svg aria-hidden="true"><use href="#i-fb"/></svg>Click to see more of my work</a>
+  </div>
+</section>
+
+<svg class="seam" data-seam data-from="#0c1f45" data-to="#eef3fa" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"></svg>
+
+<section class="band light" id="area" aria-labelledby="area-title">
+  <div class="wrap split">
+    <div>
+      <h2 class="display" id="area-title">Where I work</h2>
+      <p class="places">Philadelphia, <span>Delaware County,</span> Bucks County <span>&amp; Montgomery County</span></p>
+    </div>
+    <ul class="reach">
+      <li><svg aria-hidden="true"><use href="#i-pin"/></svg><span><strong>Service calls and repairs</strong> anywhere within about an hour of Philadelphia.</span></li>
+      <li><svg aria-hidden="true"><use href="#i-truck"/></svg><span><strong>Installs</strong> farther out, too. I'll travel long distances for the right job.</span></li>
+    </ul>
+  </div>
+</section>
+
+<svg class="seam" data-seam data-from="#eef3fa" data-to="#0c1f45" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"></svg>
+
+<section class="band dark crew" id="contractors" aria-labelledby="crew-title">
+  <div class="wrap">
+    <h2 class="display" id="crew-title">Contractors: need an extra installer?</h2>
+    <p class="lede">I take over-the-road installation work and travel for installs. If you need install support or want to team up on upcoming projects, let's talk.</p>
+    <a class="btn btn-line" id="crew-text" href="sms:+12158392766?&amp;body=Hi%20Miguel%2C%20I'm%20a%20contractor%20and%20I'd%20like%20to%20talk%20about%20install%20support%20for%20an%20upcoming%20project."><svg aria-hidden="true"><use href="#i-msg"/></svg>Text me about a project</a>
+  </div>
+</section>
+
+<svg class="seam" data-seam data-from="#0c1f45" data-to="#ffffff" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"></svg>
+
+<section class="band white" id="estimate" aria-labelledby="est-title">
+  <div class="wrap">
+    <h2 class="display" id="est-title">Get a free estimate</h2>
+    <p class="lede">Fill this in and it becomes a text to me, ready to send.</p>
+    <form id="est" novalidate>
+      <div class="field" id="f-name">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name" aria-describedby="e-name">
+        <p class="err" id="e-name">Add your name so I know who's texting.</p>
+      </div>
+      <div class="field" id="f-town">
+        <label for="town">Town or ZIP</label>
+        <input type="text" id="town" name="town" autocomplete="postal-code" aria-describedby="e-town">
+        <p class="err" id="e-town">Add your town or ZIP so I know where the job is.</p>
+      </div>
+      <fieldset class="field wide-f">
+        <legend>What's it about?</legend>
+        <div class="chips">
+          <label class="chip"><input type="checkbox" name="unit" value="Furnace"><span>Furnace</span></label>
+          <label class="chip"><input type="checkbox" name="unit" value="Heat pump"><span>Heat pump</span></label>
+          <label class="chip"><input type="checkbox" name="unit" value="Mini split"><span>Mini split</span></label>
+          <label class="chip"><input type="checkbox" name="unit" value="Central air"><span>Central air</span></label>
+          <label class="chip"><input type="checkbox" name="unit" value="Air handler"><span>Air handler</span></label>
+          <label class="chip"><input type="checkbox" name="unit" value="Water heater"><span>Water heater</span></label>
+          <label class="chip"><input type="checkbox" name="unit" value="Not sure"><span>Not sure</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="field wide-f">
+        <legend>What do you need?</legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="need" value="Repair"><span>Repair</span></label>
+          <label class="chip"><input type="radio" name="need" value="Replacement"><span>Replacement</span></label>
+          <label class="chip"><input type="radio" name="need" value="New install"><span>New install</span></label>
+          <label class="chip"><input type="radio" name="need" value="Maintenance"><span>Maintenance</span></label>
+        </div>
+      </fieldset>
+      <div class="field wide-f">
+        <label for="notes">What's going on? <span class="opt">(optional)</span></label>
+        <textarea id="notes" name="notes" placeholder="e.g. Furnace runs but blows cold air"></textarea>
+      </div>
+      <div class="wide-f">
+        <button class="btn btn-fire" type="submit" style="width:100%;max-width:420px"><svg aria-hidden="true"><use href="#i-msg"/></svg>Text this to Miguel</button>
+      </div>
+      <p class="send-note wide-f">Opens your messages app with this written out. You just hit send.</p>
+      <div class="fallback wide-f" id="fallback" role="status">
+        <p><strong>Texting not opening?</strong> Copy this and text it to 215-839-2766.</p>
+        <pre id="msg-out"></pre>
+        <button class="copy" type="button" id="copy">Copy message</button>
+      </div>
+    </form>
+    <p class="or-call">Rather talk? Call me at <a href="tel:+12158392766">215-839-2766</a>.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Medina's Airwork, back to top"><svg class="roof" aria-hidden="true"><use href="#i-roof"/></svg><b>Medina's</b><b>Airwork</b></a>
+    <p class="tag">Heating &amp; cooling solutions you can trust.</p>
+    <ul>
+      <li><a href="tel:+12158392766"><svg aria-hidden="true"><use href="#i-phone"/></svg>215-839-2766</a></li>
+      <li><a href="mailto:medinas.airwork@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg>medinas.airwork@gmail.com</a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=61585588406194"><svg aria-hidden="true"><use href="#i-fb"/></svg>Facebook</a></li>
+    </ul>
+    <small>&copy; 2026 Medina's Airwork · Philadelphia, PA</small>
+  </div>
+</footer>
+
+<script>
+/* ============ Hero air: currents you can heat ============ */
+(function(){
+  var CFG = {
+    COUNT_PHONE: 700,     // particles on phones
+    COUNT_DESK: 1700,     // particles on desktop
+    SPEED: 1.35,          // overall flow speed
+    DRIFT: 0.55,          // steady left-to-right push (air leaving a register)
+    TRAIL: 0.085,         // how fast trails fade (higher = shorter)
+    CELL: 18,             // heat grid cell size, CSS px
+    HEAT_RADIUS: 80,      // finger heat radius, CSS px
+    HEAT_ADD: 0.26,       // heat added per frame under the finger
+    COOL: 0.005,          // how fast warmed air cools back (per frame)
+    PUSH_RADIUS: 95,
+    PUSH: 0.9,
+    GHOST_IDLE: 3500      // ms after last touch before the page plays by itself
+  };
+  var hero = document.getElementById('hero');
+  var cv = document.getElementById('air');
+  var copy = document.getElementById('hero-copy');
+  if (!cv || !cv.getContext) return;
+  var ctx = cv.getContext('2d');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var W = 0, H = 0, dpr = 1, P = [], heat, gw = 0, gh = 0, mask = null;
+  var ptr = {cx: -1, cy: -1, x: -9999, y: -9999, px: 0, py: 0, vx: 0, vy: 0, last: -1e9, down: false};
+  var visible = true, raf = 0, T = 0;
+
+  // temperature colour ramp: ice blue -> white -> flame
+  var STOPS = [[143,206,255],[205,232,255],[255,244,228],[255,170,90],[255,107,26]];
+  var BUCKETS = 10, COLORS = [];
+  for (var b = 0; b < BUCKETS; b++){
+    var t = b / (BUCKETS - 1), s = t * (STOPS.length - 1), i0 = Math.floor(s), i1 = Math.min(i0 + 1, STOPS.length - 1), f = s - i0;
+    var c = [0,1,2].map(function(k){ return Math.round(STOPS[i0][k] + (STOPS[i1][k] - STOPS[i0][k]) * f); });
+    COLORS.push('rgba(' + c.join(',') + ',' + (0.55 + t * 0.4).toFixed(2) + ')');
+  }
+
+  function size(){
+    var r = hero.getBoundingClientRect();
+    var w = Math.round(r.width), h = Math.round(r.height);
+    if (w === W && h === H) return false;          // phones fire resize when the address bar moves
+    W = w; H = h;
+    dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+    cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    gw = Math.ceil(W / CFG.CELL) + 1; gh = Math.ceil(H / CFG.CELL) + 1;
+    heat = new Float32Array(gw * gh);
+    var n = W < 700 ? CFG.COUNT_PHONE : CFG.COUNT_DESK;
+    P = [];
+    for (var k = 0; k < n; k++) P.push(spawn(Math.random() * W));
+    buildMask();
+    return true;
+  }
+  function spawn(x){
+    return {x: x, y: Math.random() * H, ox: 0, oy: 0, vx: 0, vy: 0, t: 0, life: 200 + Math.random() * 400, w: 0.8 + Math.random() * 1.4};
+  }
+  // soft-edged zone over the headline: air there fades fast so nothing runs through the words
+  function buildMask(){
+    var hr = hero.getBoundingClientRect(), r = copy.getBoundingClientRect();
+    mask = document.createElement('canvas');
+    mask.width = cv.width; mask.height = cv.height;
+    var m = mask.getContext('2d'); m.scale(dpr, dpr);
+    var pad = 26, x = r.left - hr.left - pad, y = r.top - hr.top - pad, w = r.width + pad * 2, h = r.height + pad * 2;
+    m.filter = 'blur(22px)';
+    m.fillStyle = '#000';
+    m.fillRect(x, y, w, h);
+  }
+
+  function flow(x, y){
+    var a = Math.sin(x * 0.0042 + T * 0.55) * 1.15
+          + Math.cos(y * 0.0063 - T * 0.43) * 1.0
+          + Math.sin((x + y) * 0.0027 + T * 0.29) * 0.75;
+    return a;
+  }
+  function heatAt(x, y){
+    var gx = Math.max(0, Math.min(gw - 1, (x / CFG.CELL) | 0)), gy = Math.max(0, Math.min(gh - 1, (y / CFG.CELL) | 0));
+    return heat[gy * gw + gx];
+  }
+  function addHeat(x, y, amt){
+    var R = CFG.HEAT_RADIUS, c = CFG.CELL;
+    var x0 = Math.max(0, ((x - R) / c) | 0), x1 = Math.min(gw - 1, ((x + R) / c) | 0);
+    var y0 = Math.max(0, ((y - R) / c) | 0), y1 = Math.min(gh - 1, ((y + R) / c) | 0);
+    for (var gy = y0; gy <= y1; gy++) for (var gx = x0; gx <= x1; gx++){
+      var dx = gx * c - x, dy = gy * c - y, d = Math.sqrt(dx * dx + dy * dy);
+      if (d < R){ var i = gy * gw + gx; heat[i] = Math.min(1, heat[i] + amt * (1 - d / R)); }
+    }
+  }
+  function coolGrid(){
+    // warm air rises a little and cools back to the room
+    for (var gy = 0; gy < gh; gy++) for (var gx = 0; gx < gw; gx++){
+      var i = gy * gw + gx, below = gy < gh - 1 ? heat[i + gw] : heat[i];
+      heat[i] = Math.max(0, heat[i] * (1 - CFG.COOL) * 0.97 + below * 0.03 * (1 - CFG.COOL) - 0.0006);
+    }
+  }
+
+  function step(now){
+    T += 0.016 * CFG.SPEED;
+    // pointer: read the canvas rect every frame (the page scrolls under the finger)
+    var r = cv.getBoundingClientRect(), idle = now - ptr.last;
+    if (ptr.cx >= 0 && idle < 600){
+      var nx = ptr.cx - r.left, ny = ptr.cy - r.top;
+      ptr.vx = nx - ptr.x; ptr.vy = ny - ptr.y;
+      if (Math.abs(ptr.vx) > 80 || Math.abs(ptr.vy) > 80){ ptr.vx = 0; ptr.vy = 0; }
+      ptr.x = nx; ptr.y = ny;
+      addHeat(ptr.x, ptr.y, CFG.HEAT_ADD);
+    } else if (idle > CFG.GHOST_IDLE){
+      // nobody touching: an invisible heater wanders the lower air
+      var gx = W * (0.5 + 0.42 * Math.sin(T * 0.21)), gy = H * (0.72 + 0.18 * Math.sin(T * 0.37 + 1.3));
+      if (W >= 1024) gx = W * (0.72 + 0.25 * Math.sin(T * 0.21)), gy = H * (0.5 + 0.35 * Math.sin(T * 0.33 + 1.3));
+      ptr.vx = gx - ptr.x; ptr.vy = gy - ptr.y;
+      if (Math.abs(ptr.vx) > 40) ptr.vx = 0;
+      ptr.x = gx; ptr.y = gy;
+      addHeat(gx, gy, CFG.HEAT_ADD * 0.9);
+    } else { ptr.x = -9999; ptr.y = -9999; ptr.vx = ptr.vy = 0; }
+    coolGrid();
+
+    // fade old trails (transparent canvas over the CSS ground)
+    ctx.globalCompositeOperation = 'destination-out';
+    ctx.fillStyle = 'rgba(0,0,0,' + CFG.TRAIL + ')';
+    ctx.fillRect(0, 0, W, H);
+    ctx.globalCompositeOperation = 'lighter';
+
+    var paths = [];
+    for (var b = 0; b < BUCKETS; b++) paths.push([]);
+    var PR = CFG.PUSH_RADIUS, PR2 = PR * PR, sp = CFG.SPEED;
+    for (var k = 0; k < P.length; k++){
+      var p = P[k];
+      p.ox = p.x; p.oy = p.y;
+      var a = flow(p.x, p.y), h = heatAt(p.x, p.y);
+      // warm air lifts
+      var tx = Math.cos(a) * 0.9 * sp + CFG.DRIFT * sp, ty = Math.sin(a) * 0.9 * sp - p.t * 0.6 * sp;
+      var dx = p.x - ptr.x, dy = p.y - ptr.y, d2 = dx * dx + dy * dy;
+      if (d2 < PR2){
+        var d = Math.sqrt(d2) || 1, fall = 1 - d / PR;
+        p.vx += (dx / d) * fall * CFG.PUSH * 1.6 + ptr.vx * fall * 0.18;
+        p.vy += (dy / d) * fall * CFG.PUSH * 1.6 + ptr.vy * fall * 0.18;
+      }
+      p.vx *= 0.9; p.vy *= 0.9;
+      p.x += tx + p.vx; p.y += ty + p.vy;
+      p.t += (h - p.t) * 0.11;
+      p.life--;
+      if (p.x > W + 10 || p.y < -20 || p.y > H + 20 || p.life < 0 || p.x < -20){
+        var np = spawn(p.x > W + 10 || p.life < 0 ? -5 - Math.random() * 30 : Math.random() * W);
+        if (p.life < 0) np.x = Math.random() * W;
+        P[k] = np; continue;
+      }
+      var bi = Math.min(BUCKETS - 1, Math.round(p.t * (BUCKETS - 1)));
+      paths[bi].push(p);
+    }
+    for (var b2 = 0; b2 < BUCKETS; b2++){
+      var list = paths[b2]; if (!list.length) continue;
+      ctx.strokeStyle = COLORS[b2];
+      ctx.lineWidth = 1.4 + b2 * 0.12;
+      ctx.beginPath();
+      for (var j = 0; j < list.length; j++){ var q = list[j]; ctx.moveTo(q.ox, q.oy); ctx.lineTo(q.x, q.y); }
+      ctx.stroke();
+    }
+    // keep the headline zone clear: air fades out as it passes behind the words
+    if (mask){
+      ctx.globalCompositeOperation = 'destination-out';
+      ctx.globalAlpha = 0.6; ctx.setTransform(1,0,0,1,0,0); ctx.drawImage(mask, 0, 0); ctx.setTransform(dpr,0,0,dpr,0,0); ctx.globalAlpha = 1;
+    }
+    ctx.globalCompositeOperation = 'source-over';
+  }
+
+  function loop(now){
+    raf = 0;
+    if (!visible) return;
+    step(now);
+    raf = requestAnimationFrame(loop);
+  }
+  function start(){ if (!raf && visible && !reduce) raf = requestAnimationFrame(loop); }
+
+  size();
+  if (reduce){ for (var s = 0; s < 160; s++) step(-1e9); return; }
+  new IntersectionObserver(function(e){ visible = e[0].isIntersecting; start(); }).observe(hero);
+  window.addEventListener('resize', function(){ if (size()) start(); });
+
+  function move(x, y){ ptr.cx = x; ptr.cy = y; ptr.last = performance.now(); hero.classList.add('touched'); }
+  hero.addEventListener('pointermove', function(e){ move(e.clientX, e.clientY); }, {passive: true});
+  hero.addEventListener('pointerdown', function(e){ move(e.clientX, e.clientY); }, {passive: true});
+  hero.addEventListener('touchstart', function(e){ var t = e.touches[0]; move(t.clientX, t.clientY); }, {passive: true});
+  hero.addEventListener('touchmove', function(e){ var t = e.touches[0]; move(t.clientX, t.clientY); }, {passive: true});
+  start();
+})();
+
+/* ============ Air seams: moving currents between sections ============ */
+(function(){
+  var SPEED = 1.0, AMP = 9;
+  var NS = 'http://www.w3.org/2000/svg';
+  var seams = [].slice.call(document.querySelectorAll('[data-seam]'));
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var live = new Set();
+  seams.forEach(function(svg, si){
+    if (svg.dataset.from !== 'none'){
+      var bg = document.createElementNS(NS, 'rect');
+      bg.setAttribute('width', '1440'); bg.setAttribute('height', '90'); bg.setAttribute('fill', svg.dataset.from);
+      svg.appendChild(bg);
+    }
+    var fill = document.createElementNS(NS, 'path'); fill.setAttribute('class', 'fill'); fill.setAttribute('fill', svg.dataset.to);
+    svg.appendChild(fill);
+    var darkFrom = svg.dataset.from === '#0c1f45' || svg.dataset.from === 'none';
+    var cols = darkFrom ? ['#4a8dff', '#a9dcff', '#ff6b1a'] : ['#1d63ff', '#4a8dff', '#ff6b1a'];
+    var lines = [0,1,2].map(function(k){
+      var p = document.createElementNS(NS, 'path'); p.setAttribute('class', 'line');
+      p.setAttribute('stroke', cols[k]); p.setAttribute('stroke-width', k === 1 ? 2.6 : 1.6);
+      p.setAttribute('stroke-opacity', k === 2 ? .8 : .7);
+      svg.appendChild(p); return p;
+    });
+    svg._m = {fill: fill, lines: lines, ph: si * 1.7};
+  });
+  function wave(m, k, t){
+    var base = [34, 46, 58][k], d = '';
+    for (var x = 0; x <= 1440; x += 20){
+      var y = base
+        + Math.sin(x * 0.0042 + t * 0.9 + m.ph) * AMP                       // shared swell
+        + Math.sin(x * 0.011 - t * (1.6 + k * 0.35) + k * 2.1) * (3 + k)     // per-line ripple
+        + Math.sin(x * 0.0021 + t * 0.4 + k) * 4;
+      d += (x ? 'L' : 'M') + x + ' ' + y.toFixed(1);
+    }
+    return d;
+  }
+  function draw(svg, t){
+    var m = svg._m;
+    for (var k = 0; k < 3; k++){
+      var d = wave(m, k, t);
+      m.lines[k].setAttribute('d', d);
+      if (k === 1) m.fill.setAttribute('d', d + 'L1440 90L0 90Z');
+    }
+  }
+  seams.forEach(function(s){ draw(s, 0); });
+  if (reduce) return;
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting) live.add(e.target); else live.delete(e.target); });
+    if (live.size && !raf) raf = requestAnimationFrame(tick);
+  });
+  seams.forEach(function(s){ io.observe(s); });
+  var raf = 0, t0 = performance.now();
+  function tick(now){
+    raf = 0;
+    var t = (now - t0) / 1000 * SPEED;
+    live.forEach(function(s){ draw(s, t); });
+    if (live.size) raf = requestAnimationFrame(tick);
+  }
+})();
+
+/* ============ Proof: slow air drifting behind the photos ============ */
+(function(){
+  var COUNT = 90, SPEED = 0.6;
+  var sec = document.getElementById('work'), cv = document.getElementById('drift');
+  if (!cv || !cv.getContext) return;
+  var ctx = cv.getContext('2d'), W = 0, H = 0, dpr = 1, P = [], raf = 0, vis = false, T = 0;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function size(){
+    var r = sec.getBoundingClientRect(), w = Math.round(r.width), h = Math.round(r.height);
+    if (w === W && h === H) return;
+    W = w; H = h; dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+    cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    P = []; for (var i = 0; i < (W < 700 ? COUNT * .6 : COUNT); i++) P.push({x: Math.random() * W, y: Math.random() * H, warm: Math.random() < .22});
+  }
+  function frame(){
+    T += 0.016 * SPEED;
+    ctx.globalCompositeOperation = 'destination-out'; ctx.fillStyle = 'rgba(0,0,0,.06)'; ctx.fillRect(0, 0, W, H);
+    ctx.globalCompositeOperation = 'source-over'; ctx.lineWidth = 1.3;
+    for (var i = 0; i < P.length; i++){
+      var p = P[i], ox = p.x, oy = p.y;
+      var a = Math.sin(p.y * 0.006 + T * 0.5) * 0.9 + Math.cos(p.x * 0.004 - T * 0.3) * 0.6;
+      p.x += (Math.cos(a) * 0.6 + 0.7) * SPEED * 1.6; p.y += Math.sin(a) * 0.6 * SPEED * 1.6;
+      if (p.x > W + 5){ p.x = -5; p.y = Math.random() * H; continue; }
+      ctx.strokeStyle = p.warm ? 'rgba(255,138,61,.55)' : 'rgba(169,220,255,.4)';
+      ctx.beginPath(); ctx.moveTo(ox, oy); ctx.lineTo(p.x, p.y); ctx.stroke();
+    }
+  }
+  function loop(){ raf = 0; if (!vis) return; frame(); raf = requestAnimationFrame(loop); }
+  size();
+  if (reduce){ for (var s = 0; s < 120; s++) frame(); return; }
+  new IntersectionObserver(function(e){ vis = e[0].isIntersecting; if (vis && !raf) raf = requestAnimationFrame(loop); }).observe(sec);
+  window.addEventListener('resize', size);
+})();
+
+/* ============ Estimate form: becomes a text to Miguel ============ */
+(function(){
+  var PHONE = '+12158392766';
+  var form = document.getElementById('est');
+  var out = document.getElementById('msg-out'), fb = document.getElementById('fallback');
+  // a service row pre-ticks its chip
+  [].forEach.call(document.querySelectorAll('[data-pick]'), function(a){
+    a.addEventListener('click', function(){
+      var box = form.querySelector('input[name=unit][value="' + a.dataset.pick + '"]');
+      if (box) box.checked = true;
+    });
+  });
+  function compose(){
+    var v = function(id){ return document.getElementById(id).value.trim(); };
+    var units = [].map.call(form.querySelectorAll('input[name=unit]:checked'), function(i){ return i.value; });
+    var need = form.querySelector('input[name=need]:checked');
+    var lines = ['Hi Miguel, I\'d like a free estimate.', 'Name: ' + v('name'), 'Location: ' + v('town')];
+    if (units.length) lines.push('System: ' + units.join(', '));
+    if (need) lines.push('Need: ' + need.value);
+    if (v('notes')) lines.push('Details: ' + v('notes'));
+    return lines.join('\n');
+  }
+  function check(id){
+    var ok = !!document.getElementById(id).value.trim();
+    document.getElementById('f-' + id).classList.toggle('invalid', !ok);
+    document.getElementById(id).setAttribute('aria-invalid', ok ? 'false' : 'true');
+    return ok;
+  }
+  ['name', 'town'].forEach(function(id){
+    document.getElementById(id).addEventListener('input', function(){
+      if (document.getElementById('f-' + id).classList.contains('invalid')) check(id);
+    });
+  });
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var a = check('name'), b = check('town');
+    if (!a || !b){ document.getElementById(a ? 'town' : 'name').focus(); return; }
+    var msg = compose();
+    out.textContent = msg;
+    window.location.href = 'sms:' + PHONE + '?&body=' + encodeURIComponent(msg);
+    setTimeout(function(){ fb.classList.add('show'); }, 900);
+  });
+  document.getElementById('copy').addEventListener('click', function(){
+    var btn = this;
+    try {
+      navigator.clipboard.writeText(out.textContent).then(function(){ btn.textContent = 'Copied'; }, function(){ btn.textContent = 'Select the text above to copy'; });
+    } catch (err){ btn.textContent = 'Select the text above to copy'; }
+  });
+})();
+</script>
+</body>
+</html>
