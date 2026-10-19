@@ -46,10 +46,11 @@ img{display:block;max-width:100%}
 a{color:inherit}
 ::selection{background:var(--flame);color:#fff}
 :focus-visible{outline:3px solid var(--ice);outline-offset:3px;border-radius:6px}
+.light :focus-visible,.white :focus-visible{outline-color:var(--blue)}
 .wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
 .display{font-weight:900;font-style:italic;text-transform:uppercase;letter-spacing:-.02em;line-height:.98;margin:0}
 h2.display{font-size:clamp(2rem,8.4vw,3.4rem);text-wrap:balance}
-.lede{font-size:1.06rem;color:var(--ink-soft);margin:.9rem 0 0;max-width:38ch}
+.lede{font-size:1.125rem;color:var(--ink-soft);margin:.9rem 0 0;max-width:38ch}
 
 /* ============ Buttons ============ */
 .btn{display:flex;align-items:center;justify-content:center;gap:.6rem;min-height:56px;padding:0 1.4rem;border-radius:999px;font:inherit;font-weight:800;font-size:1.05rem;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background-color .2s,border-color .2s,color .2s,transform .15s}
@@ -61,7 +62,9 @@ h2.display{font-size:clamp(2rem,8.4vw,3.4rem);text-wrap:balance}
 .btn svg{width:22px;height:22px;flex:none}
 
 /* ============ Header ============ */
-.top{position:relative;z-index:3}
+.top{position:absolute;top:0;left:0;right:0;z-index:3}
+.skip{position:absolute;left:12px;top:-60px;z-index:9;padding:12px 16px;background:#fff;color:var(--navy);font-weight:800;border-radius:10px;text-decoration:none}
+.skip:focus{top:12px}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:14px;padding-bottom:6px}
 .brand{display:flex;flex-direction:column;align-items:flex-start;text-decoration:none;color:#fff;line-height:.86}
 .brand .roof{width:58px;height:16px;margin:0 0 3px 10px;color:#fff}
@@ -77,7 +80,7 @@ h2.display{font-size:clamp(2rem,8.4vw,3.4rem);text-wrap:balance}
   radial-gradient(90% 60% at 0% 0%,rgba(74,141,255,.16),transparent 60%),
   var(--navy)}
 .hero canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
-.hero-inner{position:relative;z-index:2;padding-top:22px}
+.hero-inner{position:relative;z-index:2;padding-top:104px}
 .hero-copy{max-width:600px}
 .hero h1{font-size:clamp(2.7rem,12.2vw,5.6rem)}
 .hero h1 .warm{color:var(--flame)}
@@ -86,7 +89,7 @@ h2.display{font-size:clamp(2rem,8.4vw,3.4rem);text-wrap:balance}
 .promise strong{color:#fff;font-weight:700}
 .cta{display:grid;gap:12px;margin-top:1.6rem}
 .air-pad{position:relative;height:clamp(230px,34svh,320px);touch-action:none;-webkit-user-select:none;user-select:none}
-.hint{position:absolute;left:0;right:0;bottom:64px;text-align:center;font-size:.9rem;font-weight:700;letter-spacing:.02em;color:var(--on-dark-soft);pointer-events:none;transition:opacity .6s}
+.hint{position:absolute;left:0;right:0;bottom:64px;text-align:center;font-size:.875rem;font-weight:700;letter-spacing:.02em;color:var(--on-dark-soft);pointer-events:none;transition:opacity .6s}
 .hint svg{width:18px;height:18px;vertical-align:-4px;margin-right:6px;color:var(--flame)}
 .hero.touched .hint{opacity:0}
 
@@ -106,7 +109,7 @@ h2.display{font-size:clamp(2rem,8.4vw,3.4rem);text-wrap:balance}
 /* Services */
 .rows{list-style:none;margin:1.6rem 0 0;padding:0;border-top:1px solid var(--line-light)}
 .rows li{border-bottom:1px solid var(--line-light)}
-.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:8px 2px;text-decoration:none;color:var(--ink);font-weight:800;font-size:1.18rem;outline:none}
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:8px 2px;text-decoration:none;color:var(--ink);font-weight:800;font-size:1.25rem;outline:none}
 .row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
 .arrow{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#dde6f4;color:var(--ink);transition:background-color .2s,color .2s}
 .arrow svg{width:18px;height:18px}
@@ -117,27 +120,25 @@ h2.display{font-size:clamp(2rem,8.4vw,3.4rem);text-wrap:balance}
 .steps{list-style:none;margin:1.8rem 0 0;padding:0;display:grid;gap:26px;counter-reset:s}
 .steps li{display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start}
 .steps .n{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--navy);color:#fff;font-weight:900;font-style:italic;font-size:1.35rem}
-.steps h3{margin:.2rem 0 .2rem;font-size:1.2rem;font-weight:800}
+.steps h3{margin:.2rem 0 .2rem;font-size:1.25rem;font-weight:800}
 .steps p{margin:0;color:var(--ink-soft)}
-.assure{margin:2rem 0 0;font-weight:800;font-size:1.08rem;color:var(--ink)}
-.assure span{color:var(--blue-ink)}
+.assure{margin:2rem 0 0;font-weight:800;font-size:1.125rem;color:var(--ink)}
 
 /* Proof */
 .proof{position:relative;overflow:hidden}
 .proof canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 .proof .wrap{position:relative;z-index:1}
-.shots{display:grid;grid-template-columns:.62fr 1fr;gap:14px;margin-top:1.6rem;align-items:end}
+.shots{display:grid;grid-template-columns:minmax(0,.4fr) minmax(0,1fr);gap:14px;margin-top:1.6rem;align-items:end}
 .shot{margin:0;border-radius:var(--radius);overflow:hidden;background:var(--navy-2);box-shadow:0 22px 40px -18px rgba(0,0,0,.6)}
 .shot img{width:100%;height:100%;object-fit:cover}
-.shot.tall{aspect-ratio:254/440}
-.shot.wide{aspect-ratio:516/440}
-.fb{margin-top:1.4rem;background:#fff;color:var(--navy);border-color:#fff}
+.shot.tall{aspect-ratio:254/572}
+.shot.wide{aspect-ratio:516/334}
+.fb{margin-top:1.4rem;white-space:nowrap;background:#fff;color:var(--navy);border-color:#fff}
 .fb:hover{background:var(--ice);border-color:var(--ice)}
 .fb svg{color:#1877f2}
 
 /* Area */
-.places{margin:1.4rem 0 0;font-size:clamp(1.35rem,6vw,2rem);font-weight:900;font-style:italic;text-transform:uppercase;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
-.places span{color:var(--blue-ink)}
+.places{margin:1.2rem 0 0;font-size:1.25rem;font-weight:700;line-height:1.5;color:var(--ink);max-width:30ch}
 .reach{display:grid;gap:14px;margin:1.6rem 0 0;padding:0;list-style:none}
 .reach li{display:grid;grid-template-columns:28px 1fr;gap:12px;color:var(--ink-soft)}
 .reach svg{width:26px;height:26px;color:var(--blue);margin-top:1px}
@@ -161,11 +162,11 @@ input[type=text]:hover,textarea:hover,input[type=text]:focus,textarea:focus{outl
 .chip:hover span,.chip input:focus-visible + span{border-color:var(--blue);box-shadow:0 0 0 3px rgba(29,99,255,.18)}
 .chip input:checked + span{background:var(--navy);border-color:var(--navy);color:#fff}
 .chip input:checked:focus-visible + span,.chip:hover input:checked + span{border-color:var(--blue)}
-.err{display:none;margin:8px 0 0;color:#b4261a;font-weight:700;font-size:.95rem}
+.err{display:none;margin:8px 0 0;color:#b4261a;font-weight:700;font-size:.875rem}
 .invalid .err{display:block}
 .invalid input[type=text]{border-color:#c8392b}
 form .btn-fire:hover,form .btn-fire:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
-.send-note{margin:-8px 0 0;font-size:.95rem;color:var(--ink-soft)}
+.send-note{margin:-8px 0 0;font-size:.875rem;color:var(--ink-soft)}
 .fallback{display:none;margin-top:4px;padding:18px;border-radius:var(--radius);background:#fff;border:2px solid var(--line-light)}
 .fallback.show{display:block}
 .fallback p{margin:0 0 10px}
@@ -190,8 +191,8 @@ footer small{display:block;margin-top:1.6rem;font-size:.85rem}
 @media (min-width:700px){
   :root{--gutter:32px}
   .cta{grid-template-columns:auto auto;justify-content:start}
-  .fb,.crew .btn{display:inline-flex}
-  .shots{max-width:640px}
+  .fb,.crew .btn{display:inline-flex;width:auto}
+  .shots{grid-template-columns:200px minmax(0,516px)}
   .shots{gap:20px}
 }
 @media (min-width:1024px){
@@ -201,18 +202,24 @@ footer small{display:block;margin-top:1.6rem;font-size:.85rem}
   .brand b + b{font-size:1.7rem}
   .phone{font-size:1.15rem}
   .hero{min-height:min(92svh,860px);display:flex;flex-direction:column}
-  .hero-inner{flex:1;display:flex;flex-direction:column;justify-content:center;padding-top:40px;padding-bottom:120px}
+  .hero-inner{flex:1;display:flex;flex-direction:column;justify-content:center;padding-top:140px;padding-bottom:120px}
   .air-pad{position:absolute;inset:0;height:auto;z-index:1}
-  .hint{bottom:96px}
+  .hint{bottom:96px;left:50%}
   .band{padding:96px 0 104px}
   .split{display:grid;grid-template-columns:1fr 1.1fr;gap:72px;align-items:start}
   .rows{margin-top:0}
   .steps{grid-template-columns:repeat(3,1fr);gap:36px}
   .steps li{grid-template-columns:1fr;gap:14px}
-  .shots{grid-template-columns:.55fr 1fr;max-width:720px}
+  .crew .lede{margin-top:0}
+  .work-grid{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto 1fr;column-gap:48px;align-items:start}
+  .work-grid .shots{grid-column:2;grid-row:1/3;margin-top:0;grid-template-columns:220px 460px}
+  .work-grid .fb{grid-column:1;grid-row:2;justify-self:start}
   form{grid-template-columns:1fr 1fr;column-gap:28px}
   form .wide-f{grid-column:1/-1}
   .seam{height:90px}
+}
+@media (min-width:1024px) and (pointer:coarse){
+  .air-pad{touch-action:pan-y}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -243,18 +250,20 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 
 
+<a class="skip" href="#estimate">Skip to free estimate</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Medina's Airwork, back to top">
+      <svg class="roof" aria-hidden="true"><use href="#i-roof"/></svg>
+      <b>Medina's</b><b>Airwork</b>
+    </a>
+    <a class="phone" href="tel:+12158392766"><svg aria-hidden="true"><use href="#i-phone"/></svg>215-839-2766</a>
+  </div>
+</header>
+
 <main id="top">
 <section class="hero" id="hero" aria-labelledby="hero-title">
   <canvas id="air" aria-hidden="true"></canvas>
-  <header class="top">
-    <div class="wrap">
-      <a class="brand" href="#top" aria-label="Medina's Airwork, back to top">
-        <svg class="roof" aria-hidden="true"><use href="#i-roof"/></svg>
-        <b>Medina's</b><b>Airwork</b>
-      </a>
-      <a class="phone" href="tel:+12158392766"><svg aria-hidden="true"><use href="#i-phone"/></svg>215-839-2766</a>
-    </div>
-  </header>
   <div class="hero-inner wrap">
     <div class="hero-copy" id="hero-copy">
       <h1 class="display" id="hero-title"><span class="warm">Warm</span> winters.<br><span class="cool">Cool</span> summers.</h1>
@@ -298,7 +307,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <li><span class="n" aria-hidden="true">2</span><div><h3>Free estimate</h3><p>I look at your system and tell you plainly what it needs, before any work starts.</p></div></li>
       <li><span class="n" aria-hidden="true">3</span><div><h3>Done right</h3><p>I do the job carefully and clean up after, the way I'd want it done in my own house.</p></div></li>
     </ol>
-    <p class="assure">Licensed &amp; insured. <span>Estimates are always free.</span></p>
+    <p class="assure">Licensed &amp; insured. Estimates are always free.</p>
   </div>
 </section>
 
@@ -306,7 +315,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 <section class="band dark proof" id="work" aria-labelledby="work-title">
   <canvas id="drift" aria-hidden="true"></canvas>
-  <div class="wrap">
+  <div class="wrap work-grid">
     <h2 class="display" id="work-title">Recent installs</h2>
     <div class="shots">
       <figure class="shot tall"><img src="img/handler.webp" width="254" height="572" alt="Carrier air handler installed in a utility closet" loading="lazy" decoding="async" draggable="false"></figure>
@@ -322,7 +331,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <div class="wrap split">
     <div>
       <h2 class="display" id="area-title">Where I work</h2>
-      <p class="places">Philadelphia, <span>Delaware County,</span> Bucks County <span>&amp; Montgomery County</span></p>
+      <p class="places">Philadelphia · Delaware County · Bucks County · Montgomery County</p>
     </div>
     <ul class="reach">
       <li><svg aria-hidden="true"><use href="#i-pin"/></svg><span><strong>Service calls and repairs</strong> anywhere within about an hour of Philadelphia.</span></li>
@@ -334,10 +343,12 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <svg class="seam" data-seam data-from="#eef3fa" data-to="#0c1f45" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"></svg>
 
 <section class="band dark crew" id="contractors" aria-labelledby="crew-title">
-  <div class="wrap">
+  <div class="wrap split">
     <h2 class="display" id="crew-title">Contractors: need an extra installer?</h2>
-    <p class="lede">I take over-the-road installation work and travel for installs. If you need install support or want to team up on upcoming projects, let's talk.</p>
+    <div>
+    <p class="lede">I take over-the-road install work. Need install support, or a partner on an upcoming project? Let's talk.</p>
     <a class="btn btn-line" id="crew-text" href="sms:+12158392766?&amp;body=Hi%20Miguel%2C%20I'm%20a%20contractor%20and%20I'd%20like%20to%20talk%20about%20install%20support%20for%20an%20upcoming%20project."><svg aria-hidden="true"><use href="#i-msg"/></svg>Text me about a project</a>
+    </div>
   </div>
 </section>
 
@@ -346,7 +357,6 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <section class="band white" id="estimate" aria-labelledby="est-title">
   <div class="wrap">
     <h2 class="display" id="est-title">Get a free estimate</h2>
-    <p class="lede">Fill this in and it becomes a text to me, ready to send.</p>
     <form id="est" novalidate>
       <div class="field" id="f-name">
         <label for="name">Your name</label>
@@ -393,7 +403,6 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <button class="copy" type="button" id="copy">Copy message</button>
       </div>
     </form>
-    <p class="or-call">Rather talk? Call me at <a href="tel:+12158392766">215-839-2766</a>.</p>
   </div>
 </section>
 </main>
@@ -419,7 +428,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     COUNT_DESK: 1700,     // particles on desktop
     SPEED: 1.35,          // overall flow speed
     DRIFT: 0.55,          // steady left-to-right push (air leaving a register)
-    TRAIL: 0.085,         // how fast trails fade (higher = shorter)
+    TRAIL: 0.055,         // how fast trails fade (higher = shorter)
     CELL: 18,             // heat grid cell size, CSS px
     HEAT_RADIUS: 80,      // finger heat radius, CSS px
     HEAT_ADD: 0.26,       // heat added per frame under the finger
@@ -430,7 +439,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   };
   var hero = document.getElementById('hero');
   var cv = document.getElementById('air');
-  var copy = document.getElementById('hero-copy');
+  var CLEAR = ['#hero-copy', '.top .brand', '.top .phone', '.hint'];   // text the air must never run through
   if (!cv || !cv.getContext) return;
   var ctx = cv.getContext('2d');
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -468,14 +477,17 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   }
   // soft-edged zone over the headline: air there fades fast so nothing runs through the words
   function buildMask(){
-    var hr = hero.getBoundingClientRect(), r = copy.getBoundingClientRect();
+    var hr = hero.getBoundingClientRect();
     mask = document.createElement('canvas');
     mask.width = cv.width; mask.height = cv.height;
     var m = mask.getContext('2d'); m.scale(dpr, dpr);
-    var pad = 26, x = r.left - hr.left - pad, y = r.top - hr.top - pad, w = r.width + pad * 2, h = r.height + pad * 2;
-    m.filter = 'blur(22px)';
+    m.filter = 'blur(18px)';
     m.fillStyle = '#000';
-    m.fillRect(x, y, w, h);
+    CLEAR.forEach(function(sel){
+      var el = document.querySelector(sel); if (!el) return;
+      var r = el.getBoundingClientRect(), pad = sel === '#hero-copy' ? 26 : 14;
+      m.fillRect(r.left - hr.left - pad, r.top - hr.top - pad, r.width + pad * 2, r.height + pad * 2);
+    });
   }
 
   function flow(x, y){
@@ -522,7 +534,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       ptr.vx = gx - ptr.x; ptr.vy = gy - ptr.y;
       if (Math.abs(ptr.vx) > 40) ptr.vx = 0;
       ptr.x = gx; ptr.y = gy;
-      addHeat(gx, gy, CFG.HEAT_ADD * 0.9);
+      addHeat(gx, gy, CFG.HEAT_ADD * 1.2);
     } else { ptr.x = -9999; ptr.y = -9999; ptr.vx = ptr.vy = 0; }
     coolGrid();
 
@@ -562,7 +574,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     for (var b2 = 0; b2 < BUCKETS; b2++){
       var list = paths[b2]; if (!list.length) continue;
       ctx.strokeStyle = COLORS[b2];
-      ctx.lineWidth = 1.4 + b2 * 0.12;
+      ctx.lineWidth = 1.6 + b2 * 0.16;
       ctx.beginPath();
       for (var j = 0; j < list.length; j++){ var q = list[j]; ctx.moveTo(q.ox, q.oy); ctx.lineTo(q.x, q.y); }
       ctx.stroke();
@@ -622,7 +634,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     svg._m = {fill: fill, lines: lines, ph: si * 1.7};
   });
   function wave(m, k, t){
-    var base = [34, 46, 58][k], d = '';
+    var base = [39, 46, 51][k], d = '';
     for (var x = 0; x <= 1440; x += 20){
       var y = base
         + Math.sin(x * 0.0042 + t * 0.9 + m.ph) * AMP                       // shared swell
@@ -658,7 +670,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 /* ============ Proof: slow air drifting behind the photos ============ */
 (function(){
-  var COUNT = 90, SPEED = 0.6;
+  var COUNT = 160, SPEED = 0.6;
   var sec = document.getElementById('work'), cv = document.getElementById('drift');
   if (!cv || !cv.getContext) return;
   var ctx = cv.getContext('2d'), W = 0, H = 0, dpr = 1, P = [], raf = 0, vis = false, T = 0;
@@ -672,14 +684,14 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   }
   function frame(){
     T += 0.016 * SPEED;
-    ctx.globalCompositeOperation = 'destination-out'; ctx.fillStyle = 'rgba(0,0,0,.06)'; ctx.fillRect(0, 0, W, H);
-    ctx.globalCompositeOperation = 'source-over'; ctx.lineWidth = 1.3;
+    ctx.globalCompositeOperation = 'destination-out'; ctx.fillStyle = 'rgba(0,0,0,.035)'; ctx.fillRect(0, 0, W, H);
+    ctx.globalCompositeOperation = 'source-over'; ctx.lineWidth = 1.6;
     for (var i = 0; i < P.length; i++){
       var p = P[i], ox = p.x, oy = p.y;
       var a = Math.sin(p.y * 0.006 + T * 0.5) * 0.9 + Math.cos(p.x * 0.004 - T * 0.3) * 0.6;
       p.x += (Math.cos(a) * 0.6 + 0.7) * SPEED * 1.6; p.y += Math.sin(a) * 0.6 * SPEED * 1.6;
       if (p.x > W + 5){ p.x = -5; p.y = Math.random() * H; continue; }
-      ctx.strokeStyle = p.warm ? 'rgba(255,138,61,.55)' : 'rgba(169,220,255,.4)';
+      ctx.strokeStyle = p.warm ? 'rgba(255,138,61,.7)' : 'rgba(169,220,255,.55)';
       ctx.beginPath(); ctx.moveTo(ox, oy); ctx.lineTo(p.x, p.y); ctx.stroke();
     }
   }
@@ -730,7 +742,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     var msg = compose();
     out.textContent = msg;
     window.location.href = 'sms:' + PHONE + '?&body=' + encodeURIComponent(msg);
-    setTimeout(function(){ fb.classList.add('show'); }, 900);
+    setTimeout(function(){ if (document.visibilityState === 'visible') fb.classList.add('show'); }, 1200);
   });
   document.getElementById('copy').addEventListener('click', function(){
     var btn = this;
