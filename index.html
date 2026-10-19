@@ -107,8 +107,9 @@ h2.display{font-size:clamp(2rem,8.4vw,3.4rem);text-wrap:balance}
 .dark .lede{color:var(--on-dark-soft)}
 
 /* Services */
-.rows{list-style:none;margin:1.6rem 0 0;padding:0;border-top:1px solid var(--line-light)}
+.rows{list-style:none;margin:1.6rem 0 0;padding:0}
 .rows li{border-bottom:1px solid var(--line-light)}
+.rows li:first-child{border-top:1px solid var(--line-light)}
 .row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:8px 2px;text-decoration:none;color:var(--ink);font-weight:800;font-size:1.25rem;outline:none}
 .row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
 .arrow{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#dde6f4;color:var(--ink);transition:background-color .2s,color .2s}
